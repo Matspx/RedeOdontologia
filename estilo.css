@@ -121,16 +121,16 @@ footer{
 		max-height: 50px;
 		padding: 5px;
 	}
-	.rede_social h3{
-		padding: 5px;
-		display: row;
-	}
+	
 	.row{
 		flex-direction: row;
 
 	}
 		.rede_social1{
 		display: row;
+	}
+	.rede_social1 h3{
+		padding: 5px;
 	}
 	.conteudo{
 	clear:both;
