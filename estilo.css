@@ -131,7 +131,7 @@ footer{
 
 	}
 		.rede_social1{
-		display: row;
+		display: inline;
 	}
 	.conteudo{
 	clear:both;
