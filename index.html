@@ -1,0 +1,299 @@
+<DOCTYPE! html>
+<html lang="pt-br">
+	<head>
+			<link type="text/css" rel="stylesheet" href="estilo.css"> 
+			<meta charset="UTF-8">
+		    <title>Rede odontologia</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="corpo">	
+				<div class="cabecalho">
+					<div id="logo">
+						<img src="img\Logo2.jpg">
+						<section class="rede_social row">
+							<div class="rede_social1">
+							<a href="#">
+								<img src="img/icones/Facebook_icone_2.png">
+							</a>
+							</div>
+							<div class="rede_social1">
+							<a href="#">
+								<img src="img/icones/Instagram_icone_2.png">
+							</a>
+							</div>	
+							<div class="rede_social1">
+							<a href="#">
+								<img src="img/icones/Twitter_icone_2.png">
+							</a>
+							</div>
+							<div class="rede_social1 row">	
+								<img src="img/icones/Whatsapp_icone_2.png">
+								<h3>(21)&nbsp;xxxxx&nbsp;-&nbsp;xxxx</h3>
+							</div>	
+						</section>	
+					</div>	
+					<div id="menu">
+						<a href="#">INICIO</a>
+						<a href="#">SERVIÇOS</a>	
+						<a href="#">AGENDE SUA CONSULTA</a>	
+						<a href="#">CONTATO</a>	
+					</div>	
+				</div>
+				<div class="conteudo">
+					<hr>
+					<br>
+					<h1>Somos uma rede de clínicas odontológicas completa atendendo a diversas áreas da odontologia atual e moderna</h1>
+					<br>
+					<hr>
+					<br>
+					<br>
+					<h1>SERVIÇOS</h1>
+					<br>
+					<div id="servicos">
+						<fieldset>
+								<legend>
+								<a href="#" id="mostrar_emergencias">EMERGÊNCIAS</a>
+								<a href="#" id="mostrar_endodontia">ENDODONTIA</a>	
+								<a href="#" id="mostrar_ortodontia">ORTODONTIA</a>	
+								<a href="#" id="mostrar_cirurgia">CIRURGIA
+								</a>
+								<a href="#"id="mostrar_clareamento">CLAREAMENTO</a>	
+								<a href="#"id="mostrar_periodontia">PERIODONTIA</a>	
+								<a href="#"id="mostrar_protese">PRÓTESE</a>	
+								</legend>
+							<div class="efeito_servicos">	
+								<div id="efeito_servicos_emergencias">
+								</div>
+								<div id="efeito_servicos_endodontia">
+								</div>
+								<div id="efeito_servicos_ortodontia">
+								</div>
+								<div id="efeito_servicos_cirurgia">
+								</div>
+								<div id="efeito_servicos_clareamento">
+								</div>
+								<div id="efeito_servicos_periodontia">
+								</div>
+								<div id="efeito_servicos_protese">
+								</div>
+							</div>
+						</fieldset>	
+						
+					</div>
+					<BR>
+					<h1>EQUIPE</H1>
+					<BR>
+					<section class="equipe">
+						<div class="dentista">
+							<img src="img/icones/icone1.jpg">
+							<h2>Dr.xxxx-xxxx</h2>
+						</div>
+						<div class="dentista">
+							<img src="img/icones/icone1.jpg">
+							<h2>Dr.xxxx-xxxx</h2>
+						</div>
+						<div class="dentista">
+							<img src="img/icones/icone1.jpg">
+							<h2>Dr.xxxx-xxxx</h2>
+						</div>
+					</section>
+					<br>
+					<br>	
+					<div class="contato">
+						<form action="process.php" method="post">
+							 <form id="formulario" autocomplete="off">
+						      <fieldset>
+						        <legend><h2>Comentários e sugestões</h2></legend>
+						        <label>Nome: </label><input class="campo_nome" type="text"><br>
+						        <label>E-mail:</label><input class="campo_email" type="text"><br>
+						        <label>Mensagem:</label><br><textarea class="msg" cols="120" rows="12"></textarea><br>
+						        <br>
+						        <input class="btn_submit" type="submit" value="Enviar">
+						        <input type="reset" name="limpar" value="Limpar">
+						      </fieldset>
+						    </form>
+					</div>	
+				</div>
+			</div>		
+		</div>
+	</body>
+	<footer>
+		<img src="img/logo1.jpg" align="left">
+			<div class="txt_footer">
+				<h2> Cod: 000000-0000 </h2>
+				<h2> End: dagsdifagsfui - RJ</h2>
+				<h2> Agende sua consulta </h2>
+			</div>
+ 		<script src="js/jquery.js" type="text/javascript"></script>
+ 		<script language="javascript" src="JQuery/jquery-3.4.1.min.js"></script>
+ 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<!-- Efeitos_servicos-->
+		<!-- Teste funçoes
+		<script>
+			  $(document).ready(function(){
+		  				$("#mostrar_emergencias").click(function(event){
+						  event.preventDefault();
+						$(".efeito_servicos").hide("slow");
+		  				$("#mostrar_emergencias").click(function(){
+					    $(".efeito_servicos").empty();		
+					    $("#mostrar_emergencias").click(function(event){
+						  event.preventDefault();
+						$("#efeito_servicos_emergencias").show(0);
+					    $("#mostrar_emergencias").click(function(event){
+					  	event.preventDefault();
+						$(".efeito_servicos").show(2000);
+						});
+					});
+				});
+			  });
+			});
+		</script>
+		-->
+				<!--Teste funçoes 1-->
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_emergencias").click(function(event){
+			  event.preventDefault();
+			$(".efeito_servicos").hide("slow");
+			});
+			$("#mostrar_emergencias").click(function(event){
+			  event.preventDefault();
+			$(".efeito_servicos").show(2000);
+			});
+			$("#mostrar_emergencias").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_emergencias").show(0);
+			});
+		});
+		</script>
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_endodontia").click(function(event){
+			  event.preventDefault();
+			$(".efeito_servicos").hide("slow");
+			});
+			$("#mostrar_endodontia").click(function(event){
+			  event.preventDefault();
+			$(".efeito_servicos").show(2000);
+			});
+			$("#mostrar_endodontia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_endodontia").show(0);
+			});
+		});
+		</script>
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_ortodontia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").hide("slow");
+			});
+			$("#mostrar_ortodontia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").show(2000);
+			});
+			$("#mostrar_ortodontia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_ortodontia").show(0);
+			});
+		});
+		</script>
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_cirurgia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").hide("slow");
+			});
+			$("#mostrar_cirurgia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").show(2000);
+			});
+			$("#mostrar_cirurgia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_cirurgia").show(0);
+			});
+		});
+		</script>
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_clareamento").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").hide("slow");
+			});
+			$("#mostrar_clareamento").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").show(2000);
+			});
+			$("#mostrar_clareamento").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_clareamento").show(0);
+			});
+		});
+		</script>
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_periodontia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").hide("slow");
+			});
+			$("#mostrar_periodontia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").show(2000);
+			});
+			$("#mostrar_periodontia").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_periodontia").show(0);
+			});
+		});
+		</script>
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_protese").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").hide("slow");
+			});
+			$("#mostrar_protese").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos").show(2000);
+			});
+			$("#mostrar_protese").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_protese").show(0);
+			});
+		});
+		</script>
+	
+		<!-- teste 2
+		<script>
+			$(document).ready(function(){
+				$("#mostrar_emergencia").click(function(event){
+			  	event.preventDefault();
+				$(".efeito_servicos").hide("slow");
+				$(".efeito_servicos").find("#efeito_servicos_emergencias");
+				$("#efeito_servicos_emergencias").show(2000);	
+			});
+		</script
+	-->
+		<!-- teste 3
+		<script>
+ 		$(document).ready(function(){
+			$("#mostrar_emergencias").click(function(event){
+			  event.preventDefault();
+			$(".efeito_servicos").hide("slow");
+			});
+			$("#mostrar_emergencias").click(function(event){
+			  event.preventDefault();
+			$(".efeito_servicos").find("#efeito_servicos_emergencias").map(function();
+			});
+			$("#mostrar_emergencias").click(function(event){
+			  event.preventDefault();
+			$("#efeito_servicos_emergencias").show(2000);
+			});
+		});
+	-->
+		</script>
+	</footer>
+	
+
+<html>
