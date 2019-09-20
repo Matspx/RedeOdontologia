@@ -114,7 +114,7 @@ footer{
 }
 	.rede_social{
 	float: right;
-	display: inline;
+	display: flex;
 	}
 	.rede_social img{
 		max-width: 50px; 
