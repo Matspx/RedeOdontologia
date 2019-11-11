@@ -92,18 +92,24 @@ footer{
 			color: white;
 			}	
 	
-	#efeito_servicos_emergencias{
-		background-color: #c22483;
-		min-height: 100px;
-		margin-top: 10px;
+	#div0{
+		min-height: 150px;
 		padding: 10px;
+		border: 3px solid #c22483;
+		border-radius: 15px;
+	}
+	#div1{
+		background-color: #c22483;
+		min-height: 150px;
+		padding: 10px;
+		border-radius: 15px;
 		display: none;
 	}
-	#efeito_servicos_endodontia{
+	#div2{
 		background-color: #21315e;
-		min-height: 100px;
-		margin-top: 10px;
+		min-height: 150px;
 		padding: 10px;
+		border-radius: 15px;
 		display: none;
 	}
 
