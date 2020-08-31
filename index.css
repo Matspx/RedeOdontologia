@@ -18,12 +18,7 @@ html, body{
 
 
 }
-body {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 ul,li{
     list-style: none;
 
