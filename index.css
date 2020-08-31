@@ -1,0 +1,417 @@
+:root{
+    
+    --color-primary: #f91a87;
+    --color-secondary: #5072b9;
+
+
+    /* tamanho da ofnte padrão: 16px - 100% - 1rem */
+    font-size: 60%; 
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+
+
+}
+body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul,li{
+    list-style: none;
+
+}
+hr{
+    width: 100%;
+    background: var(--color-primary);
+    height: 5px !important;
+}
+.all-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    width: 100vw;
+    height: calc(100% - 130px);
+    position: absolute;
+    bottom: 0px;
+    overflow-x: hidden;
+    background: white;
+    scroll-behavior:smooth !important;
+
+
+
+}
+
+.content{
+    width: 70%;
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#menu{
+    position: absolute;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    overflow-x: hidden;
+
+    background: white;
+    border-bottom: 4px solid var(--color-primary);
+}
+
+
+.social-header {
+    background: var(--color-primary);
+
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin:10px;
+    background: white;
+}
+
+.header {
+    background: var(--color-white);
+
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #f9f9f9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    background: black;
+
+    width: 50%;
+    height: 60px;
+}
+
+.menu{
+    background: var(--color-white);
+
+    width: 100%;
+    height: 50px;
+    box-shadow: 0em 2em 2em #f9f9f9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+    .menu ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu li a{
+        color:  var(--color-primary);
+    }
+    .menu-button{
+        margin-top: 10px;
+    }
+    .menu-button a{
+        padding: 15px 40px;
+
+        font-size: 16px;
+        font-weight: 400;
+
+        transition: .2s;
+
+    }
+    
+    .menu-button a:hover{
+        text-decoration: none;
+        color: white !important;
+        background: var(--color-primary);
+    }
+    :target{
+        position: relative;
+
+
+
+    }
+
+.banner{
+    width: 100%;
+
+    height: 100%;
+
+    background: white;
+    border: 5px solid var(--color-primary);
+    border-left: none;
+    border-right: none;
+
+}
+
+.presentation{
+    background: var(--color-white);
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentation-box{
+    margin: 40px 0px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.services{
+    transition:all 1s ease;
+    
+
+
+    margin: 0px auto;
+    
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--color-primary);
+}
+.menu-service-box{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.menu-services{
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+    .menu-services ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-services li{
+        margin: 15px 0;
+    }
+    .menu-services li a{
+        color:  white;
+    }
+    
+    .menu-services a{
+        padding: 15px 30px;
+
+        font-size: 16px;
+        font-weight: 400;
+
+        transition: .2s;
+    }
+    .menu-services a:hover{
+        text-decoration: none;
+        background: white;
+        color: var(--color-primary);
+
+
+    }
+
+.service-box{
+    background:  white;
+
+    width: 100%;
+    min-height: 60%;
+    border-radius:20px ;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team{
+    margin: 0 auto;
+    padding: 40px 30px;
+    
+    width: 100%;
+    height:100%;
+
+
+}
+.card1{
+    background: white;
+    padding: 10px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.team-card{
+    width: 95%;
+    margin: 0 auto;
+    min-height: 200px;
+    border: 4px solid var(--color-primary);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule{
+    margin: 40px 0px 0px 0;
+    
+    width: 100%;
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer{
+    width: 100%;
+    min-height: 300px;
+
+    border-top: 5px solid var(--color-primary);
+    background: white;
+}
+.box-footer{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-footer{
+    width: 100px;
+    height: 80px;
+    background: black;
+    
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+@media screen and (max-device-width:991px){
+    :root {
+        font-size: 62.5%; /* todo 1rem equivale a 10px */
+    }
+    #container{
+        height: calc(100% - 50px);
+        position: absolute;
+        top: 0px !important;     
+    }
+    .content{
+        width: 100%;
+    }
+
+    .team .content{
+        flex-direction: column;
+    }
+    #menu{
+        border-bottom: none;
+    }
+    .menu{
+        position: fixed;
+        z-index: 1111;
+        bottom: 1px;
+        border-top: 5px solid var(--color-primary);
+
+    }
+    .banner{
+        height: calc(100% - 80px);
+        position: relative;
+        top: 80px;
+        z-index: 2;
+        border: none;
+        border-top: 5px solid var(--color-primary);
+    }
+    .presentation{
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        border: none;
+        border-bottom: 5px solid var(--color-primary);
+        background: white;
+
+    }
+    .services{
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        border: none;
+
+    }
+        .menu-service-box{
+            display: block;
+        }
+        .menu-services ul{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0px;
+        }
+        .service-box{
+            min-height: 90%;
+        }
+    .team{
+        height: 100%;
+        position: relative;
+        z-index: 3;
+        border: none;
+        background: white;
+
+
+    }
+    .schedule{
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        margin: 0;
+        border: none;
+        background: white;
+
+
+    }
+}
