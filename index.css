@@ -200,11 +200,7 @@ hr{
 
     background: var(--color-primary);
 }
-.menu-service-box{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
+
 .menu-services{
 
     width: 100%;
@@ -333,8 +329,12 @@ footer{
     :root {
         font-size: 62.5%; /* todo 1rem equivale a 10px */
     }
+    body{
+        font-size: 1.6rem;
+    }
+    
     #container{
-        height: calc(100% - 50px);
+        height: 90%;
         position: absolute;
         top: 0px !important;     
     }
@@ -344,31 +344,42 @@ footer{
 
     .team .content{
         flex-direction: column;
+        
     }
     #menu{
+        border-bottom: none;
+        height: 10%;
+    }
+    .header{
+        height: 100%;
         border-bottom: none;
     }
     .menu{
         position: fixed;
         z-index: 1111;
         bottom: 1px;
-        border-top: 5px solid var(--color-primary);
+        border-top: 1.6rem solid var(--color-primary);
+        height:10%;
 
     }
+        .menu-button a{
+            padding:8rem 2rem;
+            font-size: 3.2rem;
+        }
     .banner{
-        height: calc(100% - 80px);
+        height: 90%;
         position: relative;
-        top: 80px;
+        top: 10%;
         z-index: 2;
         border: none;
-        border-top: 5px solid var(--color-primary);
+        border-top: 1.6rem solid var(--color-primary);
     }
     .presentation{
         height: 100%;
         position: relative;
         z-index: 2;
         border: none;
-        border-bottom: 5px solid var(--color-primary);
+        border-bottom: 1.6rem solid var(--color-primary);
         background: white;
 
     }
@@ -379,16 +390,30 @@ footer{
         border: none;
 
     }
-        .menu-service-box{
-            display: block;
+    .menu-service-box{
+        height: 80%;
+    }
+        .menu-services{
+            width: 100%;
+            height: 12rem;
+            margin-top: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 10px solid white;
+            border-radius: 15px;
         }
         .menu-services ul{
             display: flex;
             flex-direction: row;
             margin-bottom: 0px;
         }
+        .menu-services a{
+            font-size: 2.8rem;
+            padding: 3.6rem 4.6rem;
+        }
         .service-box{
-            min-height: 90%;
+            height: 90%;
         }
     .team{
         height: 100%;
