@@ -184,7 +184,79 @@ Dentes saudáveis e um sorriso harmônico podem melhorar a autoestima, influenci
         </div>
         <div class="schedule" id="schedule">
             <div class="content">
-                <h5>Agende!</h5>
+                <div class="schedule-content">
+
+                    <strong>De um Tempo Para Sua Boca<br>Agende Conosco!</strong>
+                    
+                    <form id="search-agenda" class="" action="" method="GET">
+
+                        <div class="select-block col-lg-4 col-md-12">
+    
+                            <label for="name">Seu Nome</label>
+                            <input type="text" id="name" name="name" required>
+    
+                        </div>
+    
+                        <div class="select-block col-lg-4 col-md-12">
+    
+                            <label for="subject" >Especialidades</label>
+
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span>Clinica</span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="0">Clinica</span>
+                                    <span class="custom-option" data-value="1">Aparelho</span>
+                                </div>
+                            </div>
+    
+                                <!--{% for subject in subjects %}
+                                
+                                    <option value="{{loop.index}}" {{ "selected" if filters.subject == loop.index }}>{{subject}}</option>
+    
+                                {% endfor %}-->
+                                
+                            
+    
+                        </div>
+    
+                        <div class="select-block col-lg-4 col-md-12">
+    
+                           <label for="subject" >Dentistas</label>
+                            <!--<select name="subject" id="subject" >
+
+                                <option value="0" selected>Sem dentista de preferência...</option>
+                                <option value="1" >Manoel daVila</option>
+                                
+                                {% for subject in subjects %}
+                                
+                                    <option value="{{loop.index}}" {{ "selected" if filters.subject == loop.index }}>{{subject}}</option>
+    
+                                {% endfor %}
+                                
+                            </select>-->
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span>Sem dentista de preferência</span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="0">Sem dentista de preferência</span>
+                                    <span class="custom-option" data-value="1">fabio Aspira</span>
+                                </div>
+                            </div>
+    
+                        </div>
+                        
+                    </form>
+    
+                    <div class="schedule-submit col-12">
+                            
+                        <button type="submit" form="search-agenda">Procurar</button> 
+                    
+                    </div>
+
+                </div>
             </div>
         </div>
         <footer>

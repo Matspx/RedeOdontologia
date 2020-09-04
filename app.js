@@ -1,22 +1,24 @@
 const express = require('express')
 const app = express()
+const router = express.Router();
+
 const port = 3000
 
 const {indexHome} = require('./pages')
 
-const nunjucks = require('nunjucks')
+///const nunjucks = require('nunjucks')
 
-nunjucks.configure('src/views', {
-    express: app,
-    noCache: true,
-})
+//nunjucks.configure('src/views', {
+//    express: app,
+//    noCache: true,
+//})
 
+router.get('/',indexHome)
 
 app
-
 .use(express.urlencoded({ extended: true}))
 .use(express.static("public"))
-.get("/", indexHome)
+.use('/', router);
 
 
 app.listen(port, () => {
