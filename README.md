@@ -1,3 +1,3 @@
 
-# https://matspx.github.io/RedeOdontologia/src/views/index.html.
+# https://matspx.github.io/RedeOdontologia/
 
